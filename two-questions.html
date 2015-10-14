@@ -1,0 +1,23 @@
+<script>
+	var question = "What is 5 * 4?"
+	var answer = prompt(question, "?");
+	var numCorrect = 0;
+	if(answer === "20"){
+		numCorrect++;
+	}
+	question = "What is (10 - 4) - 6?"
+	answer = prompt(question, "?");
+	if(answer === "0"){
+		numCorrect++;
+	}
+	if(numCorrect === 2 || numCorrect === 1){
+		alert("You got " + numCorrect + " of the questions right!")
+	}
+	else if(numCorrect === 0){
+		alert("Sorry you got both questions wrong.");
+	}
+	else{
+		alert("You got " + numCorrect + " correct. (Somehow)");
+	}
+
+</script>

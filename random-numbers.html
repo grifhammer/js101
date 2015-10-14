@@ -1,0 +1,32 @@
+<script>
+	// var lotteryWinner = 3;
+	// var yourLotteryTicket = 19200394930;
+	// if (yourLotteryTicket !== lotteryWinner){
+	// 	alert("Tough luck. No one wins the lottery.");
+	// }
+
+
+	// //Random numbers
+	// var randomNumber = Math.random();
+	// console.log(randomNumber);
+	// var betweenOneAndOnehundred = Math.random() * 100 + 1;
+	// var roundedNumber = Math.floor(betweenOneAndOnehundred);
+	// console.log(betweenOneAndOnehundred);
+	// console.log(roundedNumber);
+
+	var betweenOneAndTen = Math.floor(Math.random()*10 + 1);
+	var guess = prompt("Guess a number between 1 and 10");
+	guess = Number(guess);
+	if(guess > 10 || guess < 1){
+		alert(guess + " is not between one and ten!");
+	}
+	else if(guess === betweenOneAndTen){
+		alert("You Guessed Correctly! " + betweenOneAndTen + " was the number!");
+	}
+	else if(Math.abs((guess - betweenOneAndTen)) <= 2) {
+		alert("You were close! " + betweenOneAndTen + " was the number.");
+	}
+	else{
+		alert("You were dead wrong! " + betweenOneAndTen + " was the number.");
+	} 
+</script>

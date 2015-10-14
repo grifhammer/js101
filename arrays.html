@@ -1,0 +1,61 @@
+<script>
+	// var nfcSouthTeamOne = "Falcons";
+	// var nfcSouthTeamTwo = "Saints";
+	// var nfcSouthTeamThree = "Panthers";
+	// var nfcSouthTeamFour = "Buccaneers";
+
+	// alert("The best team in the NFC South is the " + nfcSouthTeamThree);
+	// alert("The worst team in the NFC South is the " + nfcSouthTeamFour);
+
+	// var nfcSouthTeams = ["Falcons","Saints","Panthers","Buccaneers"];
+
+	// alert(nfcSouthTeams[0]+ " " + nfcSouthTeams[3] + " " + nfcSouthTeams[2]);
+
+	// nfcSouthTeams[4] = "Ninjas";
+	// console.log(nfcSouthTeams);
+
+	// nfcSouthTeams.unshift("Front Team"); //Puts element on the front
+	// nfcSouthTeams.shift();				//Takes element off the front
+
+	// var atlTeams = [
+	// 	"Braves",
+	// 	"Falcons",
+	// 	"Hawks",
+	// 	"Thrashers"
+	// 	];
+
+	// atlTeams.splice(3, 1, "Atlanta United"); //Starting at element three it will add whatever we give it then it will remove 1 element starting at 3
+
+	// atlTeams.slice(0,1); //Starting at element 0 copies until element 1;
+
+	var dcTeam = ["Rob", "Max", "Jake", "Joe"];
+	var firstName = "Joe";
+	if(dcTeam[0] === firstName){
+		alert("You work for DC.")
+	}
+	else if(dcTeam[1] === firstName){
+		alert("You work for DC.")
+	}
+	else if(dcTeam[2] === firstName){
+		alert("You work for DC.")
+	}
+	else if(dcTeam[3] === firstName){
+		alert("You work for DC.")
+	}
+	else{
+		alert("You dont work for DC.");
+	}
+	var bool = false;
+	for(var i = 0; i < dcTeam.size(); i++){
+		if(dcTeam[i]=== firstName){
+			alert("You work for DC.");
+			bool = true;
+		}
+	}
+	if(bool === false){
+		alert("You don't work for DC.")
+	}
+
+
+
+</script>
