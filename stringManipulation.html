@@ -1,0 +1,30 @@
+<script>
+var myName = 'rOb tHE ManIAC';
+var firstChar = myName.slice(0,1);
+var firstWord = myName.slice(0,myName.indexOf(' '));
+console.log(firstWord);
+var otherChars = myName.slice(1);
+var properCaseName = firstChar.toUpperCase() + otherChars.toLowerCase();
+console.log(properCaseName);
+
+var password = prompt("Enter your password");
+// Our rules for a password:
+// --Must be between 4 and 8 characters
+// -- Must contain no spaces
+// -- Must have one number
+// -- Must have one upper case
+// -- Must have one lower case
+if((password.length > 8) || (password.length < 4)){
+	alert("Your password must be between 8 and 4 characters long.");
+}else if( password.indexOf(' ') !== -1 ){
+	alert("Your password cannot contain any spaces");
+}else if( !password.match(/\d/) ){
+	alert("Your password must contain at least one number");
+}else if( password === password.toLowerCase()){
+	alert("Your password must contain at least one Upper Case letter");
+}else if( password === password.toUpperCase() ){
+	alert("Your password must contain at least one lower case letter")
+}else{
+	alert("Your Password is valid");
+}
+</script>
