@@ -20,9 +20,9 @@ if((password.length > 8) || (password.length < 4)){
 	alert("Your password cannot contain any spaces");
 }else if( !password.match(/\d/) ){
 	alert("Your password must contain at least one number");
-}else if( password === password.toLowerCase()){
+}else if( !password.match(/[A-Z]/) ){
 	alert("Your password must contain at least one Upper Case letter");
-}else if( password === password.toUpperCase() ){
+}else if( !password.match(/[a-z]/) ){
 	alert("Your password must contain at least one lower case letter")
 }else{
 	alert("Your Password is valid");
